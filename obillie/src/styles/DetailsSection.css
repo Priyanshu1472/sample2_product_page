@@ -33,6 +33,7 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .product-price {
@@ -41,11 +42,15 @@
   color: #1a1a1a;
   margin: 0;
   letter-spacing: -0.01em;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 
 /* Product Description */
 .product-description {
   line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .product-description p {
@@ -64,15 +69,19 @@
   margin: 0 0 1.25rem 0;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .size-buttons {
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
 .size-btn {
+  font-family: 'Times New Roman', Times, serif;
   min-width: 48px;
   height: 48px;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -137,6 +146,7 @@
 
 /* Action Buttons */
 .action-buttons {
+  
   display: flex;
   gap: 1rem;
   padding-top: 1rem;
@@ -144,6 +154,7 @@
 }
 
 .add-to-cart-btn {
+  font-family: 'Times New Roman', Times, serif;
   flex: 1;
   background: #1a1a1a;
   color: white;

@@ -6,23 +6,25 @@ import img2 from '../assets/image2.png';
 
 const ImageSection = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [scrollPosition, setScrollPosition] = useState(0);
   const thumbnailsRef = useRef(null);
   const touchStartY = useRef(0);
   const touchEndY = useRef(0);
 
   const productImages = [img1, img2, img1, img2, img1, img2, img1, img2];
 
+  // Calculate scroll position based on current image index
+  const scrollPosition = Math.max(0, Math.min(productImages.length - 3, currentImageIndex - 1));
+
   const handleThumbnailClick = (index) => {
     setCurrentImageIndex(index);
   };
 
   const handleScrollUp = useCallback(() => {
-    setScrollPosition((prev) => Math.max(0, prev - 1));
+    setCurrentImageIndex((prev) => Math.max(0, prev - 1));
   }, []);
 
   const handleScrollDown = useCallback(() => {
-    setScrollPosition((prev) => Math.min(productImages.length - 3, prev + 1));
+    setCurrentImageIndex((prev) => Math.min(productImages.length - 1, prev + 1));
   }, [productImages.length]);
 
   const handleSwipe = useCallback(() => {
@@ -118,7 +120,7 @@ const ImageSection = ({ images }) => {
           <div
             className="scroll-thumb"
             style={{
-              top: `${(scrollPosition / Math.max(1, productImages.length - 3)) * 60}%`,
+              top: `${(currentImageIndex / Math.max(1, productImages.length - 1)) * 60}%`,
             }}
           />
         </div>
