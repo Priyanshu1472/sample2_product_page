@@ -471,10 +471,7 @@ backface-visibility: hidden;
 transform: translateZ(0);
 }
 
-/* Hide custom scroll bar and make dots smaller */
-.custom-scrollbar {
-display: none !important;
-}
+
 
 .dot {
 width: 6px !important;
