@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+
+/* Logo.css */
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-text {
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  /* Tablet Styles */
+  @media (max-width: 968px) {
+    .logo-text {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 640px) {
+    .logo-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Small Mobile Styles */
+  @media (max-width: 480px) {
+    .logo-text {
+      font-size: 1.25rem;
+    }
+  }

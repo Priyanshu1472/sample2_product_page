@@ -1,0 +1,141 @@
+/* ActionIcons.css */
+.action-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon-wrapper {
+    position: relative;
+    padding: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-wrapper:hover {
+    background: #9a896418;
+    transform: translateY(-2px);
+  }
+  
+  .icon-wrapper:active {
+    transform: translateY(0) scale(0.95);
+  }
+  
+  .icon {
+    color: #475569;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-wrapper:hover .icon {
+    color: #9A8964;
+  }
+  
+  /* Specific icon hover colors */
+  .heart-wrapper:hover .heart-icon {
+    color: #000000 !important;
+  }
+  
+  .cart-wrapper:hover .cart-icon {
+    color: #059669 !important;
+  }
+  
+  .profile-wrapper:hover .profile-icon {
+    color: #667eea !important;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+    animation: badgeAppear 0.3s ease-out;
+  }
+  
+  @keyframes badgeAppear {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (max-width: 968px) {
+    .action-icons {
+      gap: 4px;
+    }
+  
+    .icon-wrapper {
+      padding: 10px;
+      border-radius: 14px;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 640px) {
+    .action-icons {
+      gap: 2px;
+    }
+  
+    .icon-wrapper {
+      padding: 8px;
+      border-radius: 12px;
+    }
+  
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  /* Small Mobile Styles */
+  @media (max-width: 480px) {
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .badge {
+      width: 16px;
+      height: 16px;
+      font-size: 10px;
+      top: 4px;
+      right: 4px;
+    }
+  
+    .icon-wrapper {
+      padding: 6px;
+      border-radius: 10px;
+    }
+  }
+  
+  /* Hover Effects for Touch Devices */
+  @media (hover: none) {
+    .icon-wrapper:hover {
+      background: transparent;
+      transform: none;
+    }
+    
+    .icon-wrapper:active {
+      background: #f1f5f9;
+      transform: scale(0.95);
+    }
+  }
