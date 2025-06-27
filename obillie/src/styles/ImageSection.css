@@ -92,6 +92,7 @@
   display: flex;
   gap: 0.5rem;
   margin-top: 1rem;
+  padding: 0.2rem;
 }
 
 .dot {
