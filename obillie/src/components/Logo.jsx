@@ -6,9 +6,8 @@ const Logo = () => {
   return (
     <div className="logo">
       <h1 className="logo-text">
-        Obillie
+        Sample
       </h1>
-      
     </div>
   );
 };

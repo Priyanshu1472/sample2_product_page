@@ -19,18 +19,14 @@ const DetailsSection = () => {
     return (
       <div className="details-section">
         <div className="product-info">
-          <h1 className="product-title">NYRA</h1>
-          <p className="product-type">Halter Top</p>
+          <h1 className="product-title">Lorem ipsum</h1>
+          <p className="product-type">Tailored Shirt</p>
           <p className="product-price">₹ 999</p>
         </div>
   
         <div className="product-description">
           <p>
-            A modern silhouette. The Nyra top is a halter cut that dares to bare - elegantly. 
-            Crafted in handwoven Jamdani with its delicate motifs and featherlight feel, it 
-            wraps the body with intention while leaving just enough to the imagination. It's a 
-            piece that turns heads on rooftops, warm nights, or date-lit terraces. Think 
-            heritage, reimagined for the bold.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reprehenderit dolor numquam tempora libero molestiae earum ad minus asperiores natus? Laboriosam, praesentium atque dolor delectus fuga accusamus placeat ducimus accusantium?
           </p>
         </div>
   

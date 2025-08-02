@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 import '../styles/ImageSection.css';
-import img1 from '../assets/image1.png';
-import img2 from '../assets/image2.png';
+import img1 from '../assets/images1.jpeg';
+import img2 from '../assets/images2.jpeg';
+import img3 from '../assets/images3.jpeg';
+import img4 from '../assets/images.jpeg';
 
 const ImageSection = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -10,9 +12,8 @@ const ImageSection = ({ images }) => {
   const touchStartY = useRef(0);
   const touchEndY = useRef(0);
 
-  const productImages = [img1, img2, img1, img2, img1, img2, img1, img2];
+  const productImages = [img1, img2, img3, img4, img1, img2, img3, img4];
 
-  // Calculate scroll position based on current image index
   const scrollPosition = Math.max(0, Math.min(productImages.length - 3, currentImageIndex - 1));
 
   const handleThumbnailClick = (index) => {
